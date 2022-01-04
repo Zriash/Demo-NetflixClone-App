@@ -1,0 +1,149 @@
+.navbar {
+  width: 100%;
+  color: white;
+  font-size: 0.875em;
+  position: fixed;
+  top: 0;
+  height: 4.8em;
+  z-index: 999;
+  transition: all 0.4s linear;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.7) 10%,
+    rgba(0, 0, 0, 0)
+  );
+  //   background: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.3) 50%);
+}
+
+.left {
+  margin-left: 3.1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  cursor: pointer;
+  width: 5.8em;
+  height: 1.53em;
+  margin-right: 40px;
+}
+
+.link {
+  margin-right: 20px;
+  cursor: pointer;
+  transition: opacity 0.2s linear;
+}
+
+.link:hover {
+  opacity: 70%;
+}
+
+.active {
+  font-weight: 500;
+  margin-right: 20px;
+  cursor: default;
+}
+
+.right {
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  height: 22px;
+  width: 18px;
+  margin-right: 18px;
+  cursor: pointer;
+  font-size: 1.8rem !important;
+}
+
+.imgDiv {
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.img {
+  object-fit: cover;
+  height: 32px;
+  width: 32px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.imgDiv:hover {
+  .options {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0px;
+    top: 72px;
+    animation: showOptions;
+    animation-duration: 0.2s;
+  }
+  .iconSmall {
+    transform: rotate(180deg);
+    transition: all 0.2s linear 0.07s !important;
+  }
+
+  .upIcon {
+    display: block;
+    animation: showOptions;
+    animation-duration: 0.2s;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.options {
+  margin-right: 30px;
+  display: none;
+  background-color: var(--main-color);
+  opacity: 0.9;
+  border-radius: 5px;
+}
+
+.iconSmall {
+  transition: all 0.2s linear 0.3s !important;
+}
+
+.upIcon {
+  position: absolute;
+  display: none;
+}
+
+.options {
+  span {
+    padding: 10px;
+    cursor: pointer;
+  }
+  span:hover {
+    text-decoration: 1px underline;
+  }
+}
+
+.blackNavbar {
+  background-color: var(--main-color) !important;
+  transition: all 0.2s ease-in !important;
+}
+
+@keyframes showOptions {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0.56;
+  }
+}

@@ -1,0 +1,11 @@
+.main {
+  background-color: var(--main-color);
+  height: 1400px;
+  overflow: hidden;
+}
+
+.navbar {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+}

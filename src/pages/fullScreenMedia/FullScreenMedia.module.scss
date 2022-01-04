@@ -1,0 +1,30 @@
+.main {
+  background-color: var(--main-color);
+  margin: 0;
+  height: 100vh !important;
+  width: 100vw !important;
+  max-height: 100vh !important;
+  max-width: 100vw !important;
+}
+
+.backIcon {
+  position: absolute;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  color: white;
+  font-size: 60px !important;
+  z-index: 5;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 70%;
+  }
+}
+
+.media {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+    z-index: 2;
+}
